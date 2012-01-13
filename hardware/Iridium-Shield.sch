@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 12 Jan 2012 07:20:22 PM EST
+EESchema Schematic File Version 2  date Thu 12 Jan 2012 07:54:41 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +30,8 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:iridium-shield
-EELAYER 43  0
+LIBS:Iridium-Shield-cache
+EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
@@ -44,6 +45,67 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Label 9200 3800 0    60   ~ 0
+RX1
+Text Label 9200 3700 0    60   ~ 0
+TX1
+Text Label 9200 3100 0    60   ~ 0
+RX0
+Text Label 9200 3000 0    60   ~ 0
+TX0
+Text Label 9200 2400 0    60   ~ 0
+D7
+Text Label 9200 2200 0    60   ~ 0
+D8
+Wire Wire Line
+	9000 3700 9200 3700
+Wire Wire Line
+	9000 2400 9200 2400
+Wire Wire Line
+	9000 3100 9200 3100
+Wire Wire Line
+	1750 3250 1800 3250
+Connection ~ 1200 3050
+Wire Wire Line
+	1200 3150 1200 2350
+Wire Wire Line
+	1100 2350 1100 2800
+Wire Wire Line
+	1850 2350 1850 2800
+Wire Wire Line
+	1200 3050 2250 3050
+Wire Wire Line
+	7100 2400 7000 2400
+Wire Wire Line
+	6800 2350 6800 2200
+Wire Wire Line
+	6800 2200 7100 2200
+Wire Wire Line
+	7100 2100 6700 2100
+Wire Wire Line
+	5950 7150 5950 6750
+Wire Wire Line
+	5950 6750 6050 6750
+Wire Wire Line
+	5800 1000 5900 1000
+Wire Wire Line
+	7300 1000 7200 1000
+Connection ~ 5800 1400
+Wire Wire Line
+	5900 1400 5800 1400
+Wire Wire Line
+	5800 1600 5800 1200
+Wire Wire Line
+	5800 1200 5900 1200
+Connection ~ 4450 3550
+Wire Wire Line
+	4350 3550 4450 3550
+Connection ~ 2100 2750
+Wire Wire Line
+	2250 2750 2100 2750
+Connection ~ 2100 2450
+Wire Wire Line
+	2250 2450 2100 2450
 Connection ~ 4200 7050
 Wire Wire Line
 	4200 7200 4200 6750
@@ -55,6 +117,227 @@ Wire Wire Line
 Wire Wire Line
 	3950 6750 4200 6750
 Connection ~ 4200 6950
+Wire Wire Line
+	2250 2550 2100 2550
+Wire Wire Line
+	2100 2550 2100 2350
+Wire Wire Line
+	2250 2650 2100 2650
+Wire Wire Line
+	2100 2650 2100 2850
+Wire Wire Line
+	4350 3450 4450 3450
+Wire Wire Line
+	4450 3450 4450 3700
+Wire Wire Line
+	4350 3650 4450 3650
+Connection ~ 4450 3650
+Wire Wire Line
+	5900 1300 5800 1300
+Connection ~ 5800 1300
+Wire Wire Line
+	5900 1500 5800 1500
+Connection ~ 5800 1500
+Wire Wire Line
+	7200 1100 7300 1100
+Wire Wire Line
+	7300 1100 7300 900 
+Connection ~ 7300 1000
+Wire Wire Line
+	5900 1100 5800 1100
+Wire Wire Line
+	5800 1100 5800 950 
+Connection ~ 5800 1000
+Wire Wire Line
+	6050 7000 5950 7000
+Connection ~ 5950 7000
+Wire Wire Line
+	6350 2050 6350 2100
+Wire Wire Line
+	6350 2100 6600 2100
+Wire Wire Line
+	7100 2300 6800 2300
+Connection ~ 6800 2300
+Wire Wire Line
+	1750 2950 2250 2950
+Wire Wire Line
+	1300 2350 1300 2800
+Wire Wire Line
+	1650 2350 1650 2800
+Wire Wire Line
+	1750 3150 1750 2350
+Connection ~ 1750 2950
+Wire Wire Line
+	1200 3250 1250 3250
+Wire Wire Line
+	9000 3000 9200 3000
+Wire Wire Line
+	9000 2200 9200 2200
+Wire Wire Line
+	9000 3800 9200 3800
+Text Label 1100 2800 1    60   ~ 0
+D8
+Text Label 1650 2800 1    60   ~ 0
+D7
+Text Label 1850 2800 1    60   ~ 0
+TX1
+Text Label 1300 2800 1    60   ~ 0
+RX1
+Text Label 1250 3250 0    60   ~ 0
+RX0
+Text Label 1800 3250 0    60   ~ 0
+TX0
+$Comp
+L JUMPER-2PTH JP?
+U 1 1 4F0F7FEF
+P 1650 3250
+F 0 "JP?" V 1565 3250 50  0000 L BNN
+F 1 "JUMPER-2PTH" V 1840 3250 50  0000 L BNN
+F 2 "SparkFun-1X02" H 1650 3400 50  0001 C CNN
+	1    1650 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L JUMPER-2PTH JP?
+U 1 1 4F0F7FE0
+P 1100 3250
+F 0 "JP?" V 1015 3250 50  0000 L BNN
+F 1 "JUMPER-2PTH" V 1290 3250 50  0000 L BNN
+F 2 "SparkFun-1X02" H 1100 3400 50  0001 C CNN
+	1    1100 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L JUMPER-3SMD JP?
+U 1 1 4F0F7FA4
+P 1650 2250
+F 0 "JP?" V 1565 2250 50  0000 L BNN
+F 1 "JUMPER-3SMD" V 1940 2250 50  0000 L BNN
+F 2 "SparkFun-SJ_3" H 1650 2400 50  0001 C CNN
+	1    1650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER-3SMD JP?
+U 1 1 4F0F7F97
+P 1100 2250
+F 0 "JP?" V 1015 2250 50  0000 L BNN
+F 1 "JUMPER-3SMD" V 1390 2250 50  0000 L BNN
+F 2 "SparkFun-SJ_3" H 1100 2400 50  0001 C CNN
+	1    1100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 4F0F7F7A
+P 7000 2400
+F 0 "#PWR?" H 7000 2350 20  0001 C CNN
+F 1 "+12V" H 7000 2500 30  0000 C CNN
+	1    7000 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F0F7F72
+P 6800 2350
+F 0 "#PWR?" H 6800 2350 30  0001 C CNN
+F 1 "GND" H 6800 2280 30  0001 C CNN
+	1    6800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 4F0F7F6C
+P 6350 2050
+F 0 "#PWR?" H 6350 2140 20  0001 C CNN
+F 1 "+5V" H 6350 2140 30  0000 C CNN
+	1    6350 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER-2SMD-NO JP?
+U 1 1 4F0F7F55
+P 6600 2000
+F 0 "JP?" V 6515 2000 50  0000 L BNN
+F 1 "JUMPER-2SMD-NO" V 6790 2000 50  0000 L BNN
+F 2 "SparkFun-SJ_2S-NO" H 6600 2150 50  0001 C CNN
+	1    6600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F0F7B5D
+P 5950 7150
+F 0 "#PWR?" H 5950 7150 30  0001 C CNN
+F 1 "GND" H 5950 7080 30  0001 C CNN
+	1    5950 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 4F0F7AF3
+P 7300 900
+F 0 "#PWR?" H 7300 990 20  0001 C CNN
+F 1 "+5V" H 7300 990 30  0000 C CNN
+	1    7300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 4F0F7AEA
+P 5800 950
+F 0 "#PWR?" H 5800 900 20  0001 C CNN
+F 1 "+12V" H 5800 1050 30  0000 C CNN
+	1    5800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F0F7AD9
+P 5800 1600
+F 0 "#PWR?" H 5800 1600 30  0001 C CNN
+F 1 "GND" H 5800 1530 30  0001 C CNN
+	1    5800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F0F7ACA
+P 4450 3700
+F 0 "#PWR?" H 4450 3700 30  0001 C CNN
+F 1 "GND" H 4450 3630 30  0001 C CNN
+	1    4450 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4350 3950
+NoConn ~ 4350 3850
+$Comp
+L GND #PWR?
+U 1 1 4F0F7A96
+P 2100 2850
+F 0 "#PWR?" H 2100 2850 30  0001 C CNN
+F 1 "GND" H 2100 2780 30  0001 C CNN
+	1    2100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 4F0F7A92
+P 2100 2350
+F 0 "#PWR?" H 2100 2440 20  0001 C CNN
+F 1 "+5V" H 2100 2440 30  0000 C CNN
+	1    2100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L D15V35F5S3 U?
+U 1 1 4F0F7A6C
+P 6550 1250
+F 0 "U?" H 6550 750 60  0000 C CNN
+F 1 "D15V35F5S3" H 6550 850 60  0000 C CNN
+	1    6550 1250
+	1    0    0    -1  
+$EndComp
 $Comp
 L GND #PWR?
 U 1 1 4F0F78B1
@@ -94,10 +377,10 @@ $EndComp
 $Comp
 L 9602 U?
 U 1 1 4F0F783E
-P 3700 2250
-F 0 "U?" H 3700 1950 50  0000 C CNN
-F 1 "9602" H 3700 2050 50  0000 C CNN
-	1    3700 2250
+P 3300 3200
+F 0 "U?" H 3300 2900 50  0000 C CNN
+F 1 "9602" H 3300 3000 50  0000 C CNN
+	1    3300 3200
 	1    0    0    -1  
 $EndComp
 $Comp
