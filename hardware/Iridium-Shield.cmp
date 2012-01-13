@@ -1,0 +1,178 @@
+Cmp-Mod V01 Created by CvPcb (2011-nov-12)-testing date = Thu 12 Jan 2012 09:48:44 PM EST
+
+BeginCmp
+TimeStamp = /4F0F816C;
+Reference = C1;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F8176;
+Reference = C2;
+ValeurCmp = CP1;
+IdModule  = SMDHD/VF;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F817B;
+Reference = C3;
+ValeurCmp = CP1;
+IdModule  = SMDHD/VF;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F817F;
+Reference = C4;
+ValeurCmp = 0.5F@5.4V;
+IdModule  = CP4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F8674;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F85A2;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F85AA;
+Reference = D3;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F85F0;
+Reference = D4;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F8779;
+Reference = D5;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F7F97;
+Reference = JP1;
+ValeurCmp = JUMPER-3SMD;
+IdModule  = SparkFun-SJ_3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F7FE0;
+Reference = JP2;
+ValeurCmp = JUMPER-2PTH;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F7FA4;
+Reference = JP3;
+ValeurCmp = JUMPER-3SMD;
+IdModule  = SparkFun-SJ_3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F7FEF;
+Reference = JP4;
+ValeurCmp = JUMPER-2PTH;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F7F55;
+Reference = JP5;
+ValeurCmp = JUMPER-2SMD-NO;
+IdModule  = SparkFun-SJW;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F825D;
+Reference = P1;
+ValeurCmp = CONN_4;
+IdModule  = SIL-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F8679;
+Reference = R1;
+ValeurCmp = 220;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F85AD;
+Reference = R2;
+ValeurCmp = 220;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F85B2;
+Reference = R3;
+ValeurCmp = 220;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F8607;
+Reference = R4;
+ValeurCmp = 330;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F8775;
+Reference = R5;
+ValeurCmp = 220;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F782A;
+Reference = SHIELD1;
+ValeurCmp = ARDUINO_MEGA_SHIELD;
+IdModule  = ARDUINO_MEGA_SHIELD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F788A;
+Reference = U.FL;
+ValeurCmp = Female;
+IdModule  = HiRose-U.FL-Female;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F8B9D;
+Reference = U1;
+ValeurCmp = TC54;
+IdModule  = SOT23EBC;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F8ECF;
+Reference = U2;
+ValeurCmp = 9602;
+IdModule  = 9602;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F7A6C;
+Reference = U4;
+ValeurCmp = D15V35F5S3;
+IdModule  = D15V35F5S3;
+EndCmp
+
+EndListe
