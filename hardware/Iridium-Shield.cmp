@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-nov-12)-testing date = Thu 12 Jan 2012 09:48:44 PM EST
+Cmp-Mod V01 Created by CvPcb (2011-oct-27)-testing date = Sun 15 Jan 2012 09:30:08 AM EST
 
 BeginCmp
 TimeStamp = /4F0F816C;
@@ -106,6 +106,27 @@ IdModule  = SIL-4;
 EndCmp
 
 BeginCmp
+TimeStamp = /4F12E224;
+Reference = P2;
+ValeurCmp = CONN_6;
+IdModule  = SIL-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F12E20D;
+Reference = P3;
+ValeurCmp = CONN_9;
+IdModule  = SIL-9;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F12E207;
+Reference = P4;
+ValeurCmp = CONN_2;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
 TimeStamp = /4F0F8679;
 Reference = R1;
 ValeurCmp = 220;
@@ -148,13 +169,6 @@ IdModule  = ARDUINO_MEGA_SHIELD;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F0F788A;
-Reference = U.FL;
-ValeurCmp = Female;
-IdModule  = HiRose-U.FL-Female;
-EndCmp
-
-BeginCmp
 TimeStamp = /4F0F8B9D;
 Reference = U1;
 ValeurCmp = TC54;
@@ -166,6 +180,13 @@ TimeStamp = /4F0F8ECF;
 Reference = U2;
 ValeurCmp = 9602;
 IdModule  = 9602;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0F788A;
+Reference = U3;
+ValeurCmp = U.FL_ANT;
+IdModule  = HiRose-U.FL-Female;
 EndCmp
 
 BeginCmp
