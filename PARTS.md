@@ -28,3 +28,13 @@ Power Regulator
 The Arduino 5v regulator cannot supply nearly enough power. The board includes a footprint for this 5v Point-of-Load Power Adapter.
 
 - [Pololu Voltage Regulator](http://www.pololu.com/catalog/product/2110)
+
+
+Power Brownout Detector
+---------------
+
+If the power drops below 4.8v during transmit, the sat modem may fail to function properly (reboot), or messages may just not transmit.  The brownout detector should reliably alert the user of this condition.  This is present due to unknown power sources being applied.
+Currently: TC54 Microchip
+Proposed: Rohm BU4348__G
+    Rohm part is available precisely to trigger when below 4.8v and will trigger after 0.9ms of voltage droop.
+
