@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-oct-27)-testing date = Sun 15 Jan 2012 09:30:08 AM EST
+Cmp-Mod V01 Created by CvPcb (2011-oct-27)-testing date = Mon 16 Jan 2012 09:17:57 PM EST
 
 BeginCmp
 TimeStamp = /4F0F816C;
@@ -26,6 +26,13 @@ TimeStamp = /4F0F817F;
 Reference = C4;
 ValeurCmp = 0.5F@5.4V;
 IdModule  = CP4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F14D1C4;
+Reference = C5;
+ValeurCmp = C;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -127,6 +134,13 @@ IdModule  = SIL-2;
 EndCmp
 
 BeginCmp
+TimeStamp = /4F14D202;
+Reference = Q1;
+ValeurCmp = MOSFET_P;
+IdModule  = SOT23GDS;
+EndCmp
+
+BeginCmp
 TimeStamp = /4F0F8679;
 Reference = R1;
 ValeurCmp = 220;
@@ -169,10 +183,10 @@ IdModule  = ARDUINO_MEGA_SHIELD;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F0F8B9D;
+TimeStamp = /4F14D0DF;
 Reference = U1;
-ValeurCmp = TC54;
-IdModule  = SOT23EBC;
+ValeurCmp = BD4848;
+IdModule  = SOT23-5;
 EndCmp
 
 BeginCmp
