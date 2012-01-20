@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-oct-27)-testing date = Tue 17 Jan 2012 08:05:06 AM EST
+Cmp-Mod V01 Created by CvPcb (2011-nov-12)-testing date = Thu 19 Jan 2012 06:29:11 PM EST
 
 BeginCmp
 TimeStamp = /4F0F816C;
@@ -31,6 +31,27 @@ EndCmp
 BeginCmp
 TimeStamp = /4F14D1C4;
 Reference = C5;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F18A3F9;
+Reference = C6;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F18A3F3;
+Reference = C7;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F18A3FC;
+Reference = C8;
 ValeurCmp = C;
 IdModule  = SM0805;
 EndCmp
@@ -106,6 +127,13 @@ IdModule  = SparkFun-SJW;
 EndCmp
 
 BeginCmp
+TimeStamp = /4F18A488;
+Reference = NTC1;
+ValeurCmp = R;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
 TimeStamp = /4F0F825D;
 Reference = P1;
 ValeurCmp = CONN_4;
@@ -145,6 +173,34 @@ TimeStamp = /4F1571D1;
 Reference = P6;
 ValeurCmp = CONN_1;
 IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F18A68F;
+Reference = P7;
+ValeurCmp = CONN_2;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F18A68B;
+Reference = P8;
+ValeurCmp = CONN_2;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F18A698;
+Reference = P9;
+ValeurCmp = CONN_2;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F18A4A0;
+Reference = PTC1;
+ValeurCmp = R;
+IdModule  = R3;
 EndCmp
 
 BeginCmp
