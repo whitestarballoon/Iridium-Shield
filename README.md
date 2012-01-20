@@ -3,7 +3,7 @@ Iridium Modem  Shield
 
 This is an Arduino Shield for the [White Star Balloon](http://www.whitestarballoon.com) program.  This shield works with the Iridium 9602 Satellite Modem, transmitting small binary data messages to or from anywhere in the world. (340 bytes from modem to Internet, 270 bytes to modem from Internet)  It's original purpose is to provide 2-way telemetry and control communications on trans-atlantic weather balloon flights.  
 
-This repository does not currently hold any source code for the shield, simply design files.  If you'd like your own shield PCB, currently please inquire at <info@whitestarballoon.org> or <BradLuyster@gmail.com>.
+This repository does not currently hold any source code for the shield, simply the PCB design files.  If you'd like your own shield PCB, currently please inquire at <info@whitestarballoon.org> or <BradLuyster@gmail.com>.
 
 This shield is designed using the KiCad Software.
 
@@ -21,9 +21,28 @@ This shield is compatible with the following platforms:
 Requirements
 ------------
 
-This shield is designed to fully support the 9602 Modem based on the Arduino voltage input. You must use an external power supply capable of supplying at least 10W peak power. The 9602 uses 5V@2A when transmitting.
+### Power input
+This shield is designed to accept power in 3 different ways, CHOOSE ONLY ONE:
 
-Bare Iridium 9602 modem modules and antennas are available from [NAL Research](http://www.nalresearch.com/IridiumHardware.html) (look for 9602-I).
+- External 5V regulated, at least 2A 
+  - use this if you experience brownout warnings or want to use a smaller supercap
+  - Screw terminals available on the shield
+- Arduino/Netduino onboard voltage 5V regulator
+  - Transmissions will have to be limited to once every few minutes, to allow supercap to charge
+- Arduino Vin Unregulated 7-20V, at least 2A 
+  - Must add [Pololu Voltage Regulator](http://www.pololu.com/catalog/product/2110) to the shield to support this option.
+  - !Add heat sink to the Arduino Due/Mega regulator if you exceed 12v on Vin!
+
+### Additional Components 
+- Iridium 9602 Modem
+  - Bare Iridium 9602 modem modules are available from [NAL Research](http://www.nalresearch.com/IridiumHardware.html) (look for 9602-I).
+- Iridium Antenna
+  - Antennas are available from [NAL Research](http://www.nalresearch.com/IridiumHardware.html).
+
+Optional Accessories
+----------------
+- Screw terminals for 5V in on shield
+- Li-Poly Power Shield
 
 Specifications
 --------------
