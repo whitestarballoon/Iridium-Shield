@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 19 Jan 2012 06:59:56 PM EST
+EESchema Schematic File Version 2  date Wed 25 Jan 2012 08:42:37 PM EST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "19 jan 2012"
+Date "26 jan 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,10 +45,40 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 4150 1100 0    60   ~ 0
-5v_protected
-Text Label 5050 1600 0    60   ~ 0
-5v_protected
+Wire Wire Line
+	9000 1900 9450 1900
+Wire Wire Line
+	9000 1700 9450 1700
+Wire Wire Line
+	9450 1500 9000 1500
+Wire Wire Line
+	7100 3300 6950 3300
+Wire Wire Line
+	7100 3100 6950 3100
+Wire Wire Line
+	7100 2900 6950 2900
+Wire Wire Line
+	7100 2700 6950 2700
+Wire Wire Line
+	6250 1800 6250 2300
+Wire Wire Line
+	6250 2300 6600 2300
+Wire Wire Line
+	6600 2300 6600 2500
+Wire Wire Line
+	6600 2500 7000 2500
+Wire Wire Line
+	7000 2500 7000 2400
+Connection ~ 6800 2200
+Wire Wire Line
+	6450 1800 6450 2200
+Wire Wire Line
+	6450 2200 7100 2200
+Connection ~ 6900 2000
+Wire Wire Line
+	6650 1800 6650 2000
+Wire Wire Line
+	6650 2000 7100 2000
 Wire Wire Line
 	4550 2000 4550 2150
 Connection ~ 4550 2000
@@ -87,7 +117,7 @@ Connection ~ 3950 950
 Wire Wire Line
 	3950 1050 3950 950 
 Wire Wire Line
-	6700 2100 7100 2100
+	7100 2100 6700 2100
 Wire Wire Line
 	4700 1050 4350 1050
 Wire Wire Line
@@ -115,9 +145,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 3200 5350 3400
 Wire Wire Line
-	9200 1650 9200 1600
-Wire Wire Line
-	9200 1600 9000 1600
+	9200 1600 9200 1650
 Wire Wire Line
 	5950 7150 5950 6700
 Wire Wire Line
@@ -140,8 +168,6 @@ Wire Wire Line
 Connection ~ 1400 4300
 Wire Wire Line
 	1400 4200 1400 4300
-Wire Wire Line
-	6900 2000 7100 2000
 Wire Wire Line
 	1400 3700 1800 3700
 Wire Wire Line
@@ -174,11 +200,9 @@ Wire Wire Line
 Wire Wire Line
 	1200 3050 2250 3050
 Wire Wire Line
-	7100 2400 7000 2400
+	7000 2400 7100 2400
 Wire Wire Line
-	6800 2350 6800 2200
-Wire Wire Line
-	6800 2200 7100 2200
+	6800 2200 6800 2350
 Wire Wire Line
 	6300 2100 5900 2100
 Wire Wire Line
@@ -352,6 +376,65 @@ Wire Wire Line
 Wire Wire Line
 	5050 1600 4250 1600
 Connection ~ 4850 1600
+Wire Wire Line
+	7100 1900 6750 1900
+Wire Wire Line
+	6750 1900 6750 1800
+Wire Wire Line
+	6700 2100 6700 2050
+Wire Wire Line
+	6700 2050 6550 2050
+Wire Wire Line
+	6550 2050 6550 1800
+Wire Wire Line
+	6450 1900 6350 1900
+Wire Wire Line
+	6350 1900 6350 1800
+Connection ~ 6450 1900
+Wire Wire Line
+	7100 2600 6950 2600
+Wire Wire Line
+	7100 2800 6950 2800
+Wire Wire Line
+	7100 3000 6950 3000
+Wire Wire Line
+	7100 3200 6950 3200
+Wire Wire Line
+	9450 1600 9000 1600
+Connection ~ 9200 1600
+Wire Wire Line
+	9450 1800 9000 1800
+$Comp
+L CONN_8 P?
+U 1 1 4F20AF2F
+P 6600 2950
+F 0 "P?" V 6550 2950 60  0000 C CNN
+F 1 "CONN_8" V 6650 2950 60  0000 C CNN
+	1    6600 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_6 P?
+U 1 1 4F20AF22
+P 6500 1450
+F 0 "P?" V 6450 1450 60  0000 C CNN
+F 1 "CONN_6" V 6550 1450 60  0000 C CNN
+	1    6500 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_5 P?
+U 1 1 4F20AF13
+P 9850 1700
+F 0 "P?" V 9800 1700 50  0000 C CNN
+F 1 "CONN_5" V 9900 1700 50  0000 C CNN
+	1    9850 1700
+	1    0    0    -1  
+$EndComp
+Text Label 4150 1100 0    60   ~ 0
+5v_protected
+Text Label 5050 1600 0    60   ~ 0
+5v_protected
 $Comp
 L GND #PWR?
 U 1 1 4F18AE67
