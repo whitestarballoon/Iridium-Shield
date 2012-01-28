@@ -1,3 +1,4 @@
 *.bak
 *-cache*
 *.bck
+hardware/$Iridium-Shield.brd
