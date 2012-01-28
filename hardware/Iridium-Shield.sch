@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 19 Jan 2012 06:59:56 PM EST
+EESchema Schematic File Version 2  date Saturday, January 28, 2012 01:53:23 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,16 +30,15 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:iridium-shield
-LIBS:Iridium-Shield-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
-Title ""
-Date "19 jan 2012"
-Rev ""
-Comp ""
+Title "9602 Satellite Modem Arduino Shield"
+Date ""
+Rev "20120126"
+Comp "White Star Balloon"
 Comment1 ""
 Comment2 ""
 Comment3 ""
