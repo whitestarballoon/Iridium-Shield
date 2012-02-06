@@ -1,4 +1,4 @@
-Iridium Modem  Shield
+Iridium 9602 Satelite Modem Shield
 ==============
 
 This is an Arduino Shield for the [White Star Balloon](http://www.whitestarballoon.com) program.  This shield works with the Iridium 9602 Satellite Modem, transmitting small binary data messages to or from anywhere in the world. (340 bytes from modem to Internet, 270 bytes to modem from Internet)  It's original purpose is to provide 2-way telemetry and control communications on trans-atlantic weather balloon flights.  
@@ -6,6 +6,14 @@ This is an Arduino Shield for the [White Star Balloon](http://www.whitestarballo
 This repository does not currently hold any source code for the shield, simply the PCB design files.  If you'd like your own shield PCB, currently please inquire at <info@whitestarballoon.org> or <BradLuyster@gmail.com>.
 
 This shield is designed using the KiCad Software.
+
+Features
+-------------
+
+- U.FL connector for antenna
+- [Pololu Voltage Regulator](http://www.pololu.com/catalog/product/2110) header for supplying clean power to 9602
+- Big Capacitors to Decouple Transmit Spike (5V @ 1.5A for ~10mS during transmission)
+- Configurable Serial Lines (Selectable by solder or pin jumpers)
 
 Compatibility
 -------------
@@ -24,40 +32,53 @@ Requirements
 ### Power input
 This shield is designed to accept power in 3 different ways, CHOOSE ONLY ONE:
 
-- External 5V regulated, at least 2A 
-  - use this if you experience brownout warnings or want to use a smaller supercap
+- External 5V regulated, 2A is good 
+  - supply higher power here (no more than 3.5A) here if you experience brownout warnings or want to use a smaller supercap
   - Screw terminals available on the shield
 - Arduino/Netduino onboard voltage 5V regulator
   - Transmissions will have to be limited to once every few minutes, to allow supercap to charge
-- Arduino Vin Unregulated 7-20V, at least 2A 
-  - Must add [Pololu Voltage Regulator](http://www.pololu.com/catalog/product/2110) to the shield to support this option.
+- Arduino Vin Unregulated 7-20V
+  - Must add [Pololu Voltage Regulator](http://www.pololu.com/catalog/product/2110) to the shield to support this option. 
   - !Add heat sink to the Arduino Due/Mega regulator if you exceed 12v on Vin!
-
-### Additional Components 
+  - DISCONNECT JP5 FOR THIS OPTION
+  
+### Additional Components Not Included
 - Iridium 9602 Modem
   - Bare Iridium 9602 modem modules are available from [NAL Research](http://www.nalresearch.com/IridiumHardware.html) (look for 9602-I).
 - Iridium Antenna
   - Antennas are available from [NAL Research](http://www.nalresearch.com/IridiumHardware.html).
+  - DO NOT OPERATE 9602 MODEM WITHOUT PROPER ANTENNA
 
 Optional Accessories
 ----------------
-- Screw terminals for 5V in on shield
+- Screw/JST connector for 5V in on shield
 - Li-Poly Power Shield
 
-Specifications
+Bill of Materials
+----------------
+See google doc: [IRShield BOM](https://docs.google.com/spreadsheet/ccc?key=0AnfcbUEovLhOdDBFMjhTX09pdklTWF9EdWd0ZmhmX1E&hl=en_US)
+
+Specifications (actual for Rev 1 pcb)
 --------------
 
-- U.FL connector for antenna
-- [Pololu Voltage Regulator](http://www.pololu.com/catalog/product/2110) header for supplying clean power to 9602
-- Configurable Serial Lines (Selectable by solder or pin jumpers)
-  - Pins 18/19 for UART1 on Arduino Mega (and similar)
-  - Pins 0/1 for UART on Arduino Uno/Due and Netduino
-  - Pins 7/8 for SoftSerial (Optional)
-- Pin 2: Ring Indicator (Input to Arduino on External Interrupt 0)
-- Pin 3: Network Available Indicator (Input to Arduino on External Interrupt 1)
-- Pin 4: Modem On/Off Control (Output from Arduino)
-- Pin 6: DSR (Input to Arduino)
-- Big Capacitors to Decouple Transmit Spike (5V @ 1.5A for ~10mS during transmission)
+Arduino pin numbers:
+
+- Pins D18/D19 for UART1 on Arduino Mega (and similar) *REV 1 PCB swap lines using wire jumpers from JP4 to D18, and JP2 to D19*
+- Pins D0/D1 for UART on Arduino Uno/Due and Netduino *REV 1 PCB swap lines using wire jumpers diagonally across JP4 and JP2*
+- Pins D7/D8 for SoftSerial (Optional) *REV 1 PCB swap tx/rx in software*
+- Pin D2: Message Waiting Indicator (RI, ACTIVE-LOW on Interrupt 0)
+- Pin D3: Satellite Available Indicator (NA, ACTIVE-LOW on  Interrupt 1)
+- Pin D4: Modem Power Enable (SET HIGH = TURN MODEM ON)
+- Pin D5: Brownout Detector Indicator 4.8v (ACTIVE-LOW)
+- Pin D6: Modem Bootup Complete Indicator (DSR, ACTIVE-LOW)
+
+Shield LED Labels:
+
+- D1 = (RI) Message Waiting Indicator
+- D2 TX = Serial data TO 9602 **CONFUSING**
+- D3 RX = Serial data FROM 9602 **CONFUSING**
+- D4 = 5V Power ON
+- D5 = (NA) Satellite Available 
 
 Theory of operation
 -------------------
