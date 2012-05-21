@@ -1,18 +1,20 @@
 Iridium 9602 Satelite Modem Shield
 ==============
 
-This is an Arduino Shield for the [White Star Balloon](http://www.whitestarballoon.com) program.  This shield works with the Iridium 9602 Satellite Modem, transmitting small binary data messages to or from anywhere in the world. (340 bytes from modem to Internet, 270 bytes to modem from Internet)  It's original purpose is to provide 2-way telemetry and control communications on trans-atlantic weather balloon flights.  
+This Arduino/Netduino shield will interface an Iridium 9602 SBD Satellite Modem, transmitting small binary (or text) data messages to or from anywhere in the world. (340 bytes from modem to Internet, 270 bytes to modem from Internet)  It's been tested in the field to provide 2-way telemetry and control communications on long-duration weather balloon flights for http://whitestarbaloon.com.  
 
-This repository does not currently hold any source code for the shield, simply the PCB design files.  If you'd like your own shield PCB, currently please inquire at <info@whitestarballoon.org> or <BradLuyster@gmail.com>.
+If you'd like your own shield PCB, feel free to use the Gerber directory to have a copy made, or email <info@whitestarballoon.org> for more info.
 
 This shield is designed using the KiCad Software.
+
+For Arduino code that we used with this shield, see the [White Star Comm-Controller github repository](https://github.com/whitestarballoon/Com-Controller).  Flight tested!
 
 Features
 -------------
 
 - U.FL connector for antenna
 - [Pololu Voltage Regulator](http://www.pololu.com/catalog/product/2110) header for supplying clean power to 9602
-- Big Capacitors to Decouple Transmit Spike (5V @ 1.5A for ~10mS during transmission)
+- Super Capacitors to Decouple Transmit Spike (5V @ 1.5A for ~10mS during transmission)
 - Configurable Serial Lines (Selectable by solder or pin jumpers)
 
 Compatibility
@@ -20,32 +22,29 @@ Compatibility
 
 This shield is compatible with the following platforms:
 
--  Arduino Mega
--  Seeduino Mega
--  Netduino
--  Arduino Uno
+-  Arduino Mega (Tested with Mega 2560)
+-  Seeduino Mega (Untested)
+-  Netduino (Untested)
+-  Arduino Uno (Untested)
 -  Arduino Due (Untested)
 
 Requirements
 ------------
 
 ### Power input
-This shield is designed to accept power in 3 different ways, CHOOSE ONLY ONE:
+This shield is designed to accept power in 2 different ways, CHOOSE ONLY ONE:
 
-- External 5V regulated, 2A is good 
+- External 5V regulated, 2A is recommended (as low as 500ma may work with reduced transmit duty cycle) 
   - supply higher power here (no more than 3.5A) here if you experience brownout warnings or want to use a smaller supercap
   - Screw terminals available on the shield
 - Arduino/Netduino onboard voltage 5V regulator
   - Transmissions will have to be limited to once every few minutes, to allow supercap to charge
-- Arduino Vin Unregulated 7-20V
-  - Must add [Pololu Voltage Regulator](http://www.pololu.com/catalog/product/2110) to the shield to support this option. 
-  - !Add heat sink to the Arduino Due/Mega regulator if you exceed 12v on Vin!
-  - DISCONNECT JP5 FOR THIS OPTION
   
 ### Additional Components Not Included
 - Iridium 9602 Modem
   - Bare Iridium 9602 modem modules are available from [NAL Research](http://www.nalresearch.com/IridiumHardware.html) (look for 9602-I).
 - Iridium Antenna
+  - u.fl to SMA adapter cable 
   - Antennas are available from [NAL Research](http://www.nalresearch.com/IridiumHardware.html).
   - DO NOT OPERATE 9602 MODEM WITHOUT PROPER ANTENNA
 
